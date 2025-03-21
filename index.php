@@ -65,138 +65,151 @@
     </div>
   </nav>
 
-<div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false"
-    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-     <form action="">
-        <div class="modal-header">
-          <h5 class="modal-title d-flex align-items-center">
-            <i class="bi bi-person-circle fs-3 me-2"></i>User login</h5>
-          <button type="reset" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="mb-3">
-            <label class="form-label">Email address</label>
-            <input type="email" class="form-control shadow-none">
+  <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false"
+      tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      <form action="">
+          <div class="modal-header">
+            <h5 class="modal-title d-flex align-items-center">
+              <i class="bi bi-person-circle fs-3 me-2"></i>User login</h5>
+            <button type="reset" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="mb-3">
-            <label class="form-label">Password</label>
-            <input type="Password" class="form-control shadow-none">
+          <div class="modal-body">
+            <div class="mb-3">
+              <label class="form-label">Email address</label>
+              <input type="email" class="form-control shadow-none">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Password</label>
+              <input type="Password" class="form-control shadow-none">
+            </div>
+            <div class=" d-flex align-items-center justify-content-between mb-2">
+              <button  type="submit" class="btn btn-dark shadow-none">LOGIN</button>
+              <a href="javascript: void(0)" class="text-secondary text-decoration-none">forget password?</a>
+            </div>
           </div>
-          <div class=" d-flex align-items-center justify-content-between mb-2">
-            <button  type="submit" class="btn btn-dark shadow-none">LOGIN</button>
-            <a href="javascript: void(0)" class="text-secondary text-decoration-none">forget password?</a>
-          </div>
-        </div>
-     </form>
+      </form>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-     <form action="">
-        <div class="modal-header">
-          <h5 class="modal-title d-flex align-items-center">
-            <i class="bi bi-person-lines-fill fs-3 me-2"></i>
-            User Registration</h5>
-          <button type="reset" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap lh-base">
-          Note: Your details must match with your ID(Aadhaar card, Passport, Driving License, etc.)
-          that will be required  during check-in.
-          </span>
-          <div class=" container-fluid">
-            <div class="row">
-              <div class="col-md-6 ps-0 mb-3">
-                <label class="form-label">Name</label>
-                <input type="text" class="form-control shadow-none">
-              </div>
-              <div class="col-md-6 p-0 mb-3">
-                <label class="form-label">Email</label>
-                <input type="email" class="form-control shadow-none">
-              </div>
-               <div class="col-md-6 ps-0 mb-3">
-                <label class="form-label">Phone number</label>
-                <input type="number" class="form-control shadow-none">
-              </div>
-              <div class="col-md-6 p-0 mb-3">
-                <label class="form-label">Pictures</label>
-                <input type="file" class="form-control shadow-none">
-              </div>
-              <div class="col-md-12 p-0 mb-3">
-                <label class="form-label">Address</label>
-                <textarea class="form-control shadow-none"  rows="1"></textarea>
-              </div>
-               <div class="col-md-6 ps-0 mb-3">
-                <label class="form-label">Pincode</label>
-                <input type="number" class="form-control shadow-none">
-              </div>
-              <div class="col-md-6 p-0 mb-3">
-                <label class="form-label">Date of birth</label>
-                <input type="date" class="form-control shadow-none">
-              </div>
-              <div class="col-md-12 ps-0 mb-3">
-                <label class="form-label">Password</label>
-                <input type="password" class="form-control shadow-none">
-              </div>
-              <div class="col-md-12 p-0 mb-3">
-                <label class="form-label"> Confirm Password</label>
-                <input type="password" class="form-control shadow-none">
-              </div>
-              <div class="text-center my-1">
-                <button  type="submit" class="btn btn-dark shadow-none">REGISTER</button>
+  <div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      <form action="">
+          <div class="modal-header">
+            <h5 class="modal-title d-flex align-items-center">
+              <i class="bi bi-person-lines-fill fs-3 me-2"></i>
+              User Registration</h5>
+            <button type="reset" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap lh-base">
+            Note: Your details must match with your ID(Aadhaar card, Passport, Driving License, etc.)
+            that will be required  during check-in.
+            </span>
+            <div class=" container-fluid">
+              <div class="row">
+                <div class="col-md-6 ps-0 mb-3">
+                  <label class="form-label">Name</label>
+                  <input type="text" class="form-control shadow-none">
+                </div>
+                <div class="col-md-6 p-0 mb-3">
+                  <label class="form-label">Email</label>
+                  <input type="email" class="form-control shadow-none">
+                </div>
+                <div class="col-md-6 ps-0 mb-3">
+                  <label class="form-label">Phone number</label>
+                  <input type="number" class="form-control shadow-none">
+                </div>
+                <div class="col-md-6 p-0 mb-3">
+                  <label class="form-label">Pictures</label>
+                  <input type="file" class="form-control shadow-none">
+                </div>
+                <div class="col-md-12 p-0 mb-3">
+                  <label class="form-label">Address</label>
+                  <textarea class="form-control shadow-none"  rows="1"></textarea>
+                </div>
+                <div class="col-md-6 ps-0 mb-3">
+                  <label class="form-label">Pincode</label>
+                  <input type="number" class="form-control shadow-none">
+                </div>
+                <div class="col-md-6 p-0 mb-3">
+                  <label class="form-label">Date of birth</label>
+                  <input type="date" class="form-control shadow-none">
+                </div>
+                <div class="col-md-12 ps-0 mb-3">
+                  <label class="form-label">Password</label>
+                  <input type="password" class="form-control shadow-none">
+                </div>
+                <div class="col-md-12 p-0 mb-3">
+                  <label class="form-label"> Confirm Password</label>
+                  <input type="password" class="form-control shadow-none">
+                </div>
+                <div class="text-center my-1">
+                  <button  type="submit" class="btn btn-dark shadow-none">REGISTER</button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-     </form>
+      </form>
+      </div>
     </div>
   </div>
-</div>
-<div class="container-fluid px-lg-4 mt-4">
-  <div class="swiper swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="image/1.jpg" class="w-100 d-block" />
-        </div>
-        <div class="swiper-slide">
-          <img src="image/2.jpg" class="w-100 d-block" />
-        </div>
-        <div class="swiper-slide">
-          <img src="image/3a.jpg" class="w-100 d-block" />
-        </div>
-        <div class="swiper-slide">
-          <img src="image/4.jpg" class="w-100 d-block" />
-        </div>
-        <div class="swiper-slide">
-          <img src="image/5a.jpg" class="w-100 d-block" />
-        </div>
-        <div class="swiper-slide">
-          <img src="image/6a.jpg" class="w-100 d-block" />
-        </div>
+<!-- carousel -->
+  <div class="container-fluid px-lg-4 mt-4">
+    <div class="swiper swiper-container">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="image/1.jpg" class="w-100 d-block" />
+          </div>
+          <div class="swiper-slide">
+            <img src="image/2.jpg" class="w-100 d-block" />
+          </div>
+          <div class="swiper-slide">
+            <img src="image/3a.jpg" class="w-100 d-block" />
+          </div>
+          <div class="swiper-slide">
+            <img src="image/4.jpg" class="w-100 d-block" />
+          </div>
+          <div class="swiper-slide">
+            <img src="image/5a.jpg" class="w-100 d-block" />
+          </div>
+          <div class="swiper-slide">
+            <img src="image/6a.jpg" class="w-100 d-block" />
+          </div>
+      </div>
     </div>
   </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-      var swiper = new Swiper(".swiper-container", {
-        spaceBetween: 30,
-        effect: "fade",
-        navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      });
-  </script>  
+<!-- check availability form -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 bg-white shadow p-4 rounded">
+        <h5>check booking availability</h5>
+        <form >
+          <div class="row">
+            <div class="col-lg-3">
+              <label class="form-label" style="font-weight: 500;">Check in</label>
+              <input type="date" class="form-control shadow-none">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ <script>
+        var swiper = new Swiper(".swiper-container", {
+          spaceBetween: 30,
+          effect: "fade",
+          loop :true,
+          autoplay:{
+             delay:3200,
+             disableOnInteraction: false,
+          },
+       });
+ </script>  
 </body>
 </html>
