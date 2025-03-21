@@ -16,7 +16,7 @@
             font-family: 'Poppins',sans-serif;
         }
         .h-font{
-            font-family: 'Merienda',cursive;
+            font-family: 'Merienda','cursive';
         }
         input::-webkit-outer-spin-button,
         input::-webkit-inner-spin-button {
@@ -25,6 +25,24 @@
         }
         input[type=number] {
           -moz-appearance: textfield;
+        }
+        .custom-bg{
+          background-color:black;
+        }
+        .custom-bg:hover{
+          background-color:blueviolet;
+        }
+        .availability-form{
+          margin-top: -50px;
+          z-index: 2;
+          position: relative;
+        }
+        @media screen and (max-width: 575px){
+          .availability-form{
+            margin-top: -50px;
+            z-index: 2;
+            position: relative;
+         }
         }
     </style>
 </head>
@@ -171,7 +189,7 @@
             <img src="image/3a.jpg" class="w-100 d-block" />
           </div>
           <div class="swiper-slide">
-            <img src="image/4.jpg" class="w-100 d-block" />
+            <img src="image/7.png" class="w-100 d-block" />
           </div>
           <div class="swiper-slide">
             <img src="image/5a.jpg" class="w-100 d-block" />
@@ -183,21 +201,69 @@
     </div>
   </div>
 <!-- check availability form -->
-  <div class="container">
+  <div class="container availability-form">
     <div class="row">
       <div class="col-lg-12 bg-white shadow p-4 rounded">
-        <h5>check booking availability</h5>
+        <h5 class="mb-4">check booking availability</h5>
         <form >
-          <div class="row">
-            <div class="col-lg-3">
+          <div class="row align-items-end">
+            <div class="col-lg-3 mb-3">
               <label class="form-label" style="font-weight: 500;">Check in</label>
               <input type="date" class="form-control shadow-none">
+            </div>
+            <div class="col-lg-3 mb-3">
+              <label class="form-label" style="font-weight: 500;">Check Out</label>
+              <input type="date" class="form-control shadow-none">
+            </div>
+            <div class="col-lg-3 mb-3">
+              <label class="form-label" style="font-weight: 500;">Adult</label>
+              <select class="form-select shadow-none">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col-lg-2 mb-3">
+              <label class="form-label" style="font-weight: 500;">Children</label>
+              <select class="form-select shadow-none">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col-lg-1 mb-lg-3 mt-2">
+              <button type="submit" class="btn text-white shodow-none custom-bg">Submit</button>
             </div>
           </div>
         </form>
       </div>
     </div>
   </div>
+  <br><br><br>
+  <br><br><br>
+  <!-- Our Rooms -->
+  <h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">OUR ROOMS</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 my-3">
+         <div class="card border-0 shadow" style="max-width:350px; margin:auto;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5>Simple Room name</h5>
+              <h6>₹200 per night</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+         </div>
+      </div>
+      <div class="col-lg-12 text-center mt-5">
+        <a href="" class="btn btn-sn btn-outline-dark rounded-0 fw-bold shadow-none">More Rooms>>></a>
+      </div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
  <script>
