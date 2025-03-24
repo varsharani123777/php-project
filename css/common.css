@@ -1,0 +1,32 @@
+*{
+    font-family: 'poppins',sans-serif;
+}
+.h-font{
+    font-family: 'merienda',cursive;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+  margin: 0;
+        }
+        input[type=number] {
+          -moz-appearance: textfield;
+        }
+        .custom-bg{
+          background-color:black;
+        }
+        .custom-bg:hover{
+          background-color:blueviolet;
+        }
+        .availability-form{
+          margin-top: -50px;
+          z-index: 2;
+          position: relative;
+        }
+        @media screen and (max-width: 575px){
+          .availability-form{
+            margin-top: -50px;
+            z-index: 2;
+            position: relative;
+         }
+        }
