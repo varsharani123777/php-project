@@ -5,7 +5,6 @@
     <title>about</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -271,7 +270,7 @@
           </div>
      </div>     
   </div> -->
-  <div class="container mt-5">
+  <!-- <div class="container mt-5">
     <div class="swiper swiper-testnominals">
       <div class="swiper-wrapper mb-5">
 
@@ -329,8 +328,52 @@
      </div>
      <div class="swiper-pagination"></div>
    </div>
-  </div>
+  </div>  -->
+   <div class="container mt-5">
+    <div class="swiper swiper-testnominals">
+      <div class="swiper-wrapper mb-5">
 
+        <div class="swiper-slide bg-white p-4 ">
+          <div class="profile d-flex align-items-center mb-3">
+              <img src="about/man2.jpeg" alt="30px">
+              <h6 class="mt-80 ml-34">Random user1</h6>
+          </div>
+          <div class="detail">
+            <p>Lorem ipsum dolor sit amet consectetur, 
+              adipisicing elit. Aut nobis corporis quo? Voluptate perferendis accusamus
+               quam temporibus dolorem repellendus explicabo?
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide bg-white p-4 ">
+          <div class="profile d-flex align-items-center mb-3">
+              <img src="about/women3.jpeg" alt="30px">
+              <h6 class="mt-80 ml-34">Random user1</h6>
+          </div>
+          <div class="detail">
+            <p>Lorem ipsum dolor sit amet consectetur, 
+              adipisicing elit. Aut nobis corporis quo? Voluptate perferendis accusamus
+               quam temporibus dolorem repellendus explicabo?
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide bg-white p-4 ">
+          <div class="profile d-flex align-items-center mb-3">
+              <img src="about/man3.jpeg" alt="30px">
+              <h6 class="mt-80 ml-34">Random user1</h6>
+          </div>
+          <div class="detail">
+            <p>Lorem ipsum dolor sit amet consectetur, 
+              adipisicing elit. Aut nobis corporis quo? Voluptate perferendis accusamus
+               quam temporibus dolorem repellendus explicabo?
+            </p>
+          </div>
+        </div>
+     </div>
+     <div class="swiper-pagination"></div>
+   </div>
+  </div>
+  <!-- Swiper Container-->
  <div class="container-fluid bg-white mt-5">
   <div class="row">
     <div class="col-lg-4 p-4">
@@ -369,37 +412,38 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
-     var swiper = new Swiper(".swiper-testnominals", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        loop:true,
-        coverflowEffect: {
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows:false,
+    var swiper = new Swiper(".swiper-testnominals", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      loop:true,
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows:false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      breakpoints: {
+        320:{
+          slidesPerView:1,
         },
-        pagination: {
-          el: ".swiper-pagination",
+        640:{
+          slidesPerView:1,
         },
-        breakpoints: {
-          320:{
-            slidesPerView:1,
-          },
-          640:{
-            slidesPerView:1,
-          },
-          768:{
-            slidesPerView:2,
-          },
-          1024:{
-            slidesPerView:3,
-          }
+        768:{
+          slidesPerView:2,
+        },
+        1024:{
+          slidesPerView:3,
         }
-     });
+      }
+    });
+
   </script>
  
 </body>
